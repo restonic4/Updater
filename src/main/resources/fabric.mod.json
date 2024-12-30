@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "updater",
+  "version": "${version}",
+  "name": "Updater",
+  "description": "",
+  "authors": [],
+  "contact": {
+    "repo": "https://github.com/marco/Updater"
+  },
+  "license": "MIT",
+  "icon": "assets/updater/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "com.restonic4.updater.client.UpdaterClient"
+    ],
+    "main": [
+      "com.restonic4.updater.Updater"
+    ]
+  },
+  "mixins": [
+    "updater.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
